@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./calcbg.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.calculator{
+    border: 1px solid #616164;
+    padding: 20px;
+    border-radius: 16px;
+    background: rgba(35, 28, 28, 0.107);
+    box-shadow: 0px 3px 15px rgba(43, 47, 56, 0.5);
+
+}
+
+input{
+    width: 320px;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgbs(84, 84, 84, 0.1);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+input::placeholder{
+    color: #ffffff;
+}
+
+button{
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background: rgba(41, 33, 33, 0.107);
+    color: #ffffff;
+    font-size: 20px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.107);
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.15);
+    transition: all .2s ease-in-out;
+    color: #fce300;
+}
+
+.equalBtn{
+    background-color: #fb821f;
+}
+
+.operator{
+    color: #ff6b01;
+}
